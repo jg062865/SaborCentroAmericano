@@ -1,0 +1,320 @@
+* {box-sizing: border-box;}
+
+body{
+    background-color: #4b70b3;
+}
+/**************************************** General *****************************************/
+/*********************** Header **************************/
+#header-nav { 
+    border-radius: 0 !important;
+    border: 0 ;
+    width: 100% ;
+    background-color: #6495ED;
+    font-size: 16pt;
+}
+
+/*** Brand & Logo ***/
+#logo {
+    width:100px;
+    height:100px;
+}
+#brandsection-container {
+    padding-top:36px;
+    line-height: 20px;
+}
+.navbar-brand { 
+    padding-top: 25px;
+    font-family: cursive !important;
+    color: gold;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin:0;
+    padding:0;
+    line-height: .75;
+    width:100px;
+    height:100px;
+}
+.navbar-brand a, .navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none;
+    color: gold; 
+}
+#sub-heading {
+    font-size: 3.2vw;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #222;  
+}
+
+/*** Affects Phone Subtitle on small/x-small displays ***/
+#phone {
+    text-align: center;
+}
+#phone-container {
+    background-color: #6495ED ;
+    border: gold solid 3px;
+    max-width: 100% !important;
+    text-align: center;
+    margin-top:6px;
+}
+
+/*** Button Styling ***/ 
+.nav-link{
+    color: white ;
+    text-shadow: 1px 1px 1px #222;
+    text-align: center;
+}
+.nav-link:hover {
+    color: gold;
+}
+svg {
+    fill: white;
+}
+
+
+/*********************** Middle Section **************************/
+#jumbotron {
+    border: 3px solid gold;
+
+}
+#home-tiles-container {
+    margin-top: 12px;
+}
+#menu-tile, #about-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 12px;
+    position: relative;
+    border: 3px solid gold;
+    overflow: hidden;
+}
+#menu-tile:hover, #about-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+    background: url('../images/carne-asada.jpeg') no-repeat;
+    background-position: center;
+}
+#about-tile {
+    background: url('../images/mountains.jpeg') no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #about-tile span, #map-tile span {
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    text-align:center;
+    font-size:1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;    
+    opacity: .7;
+}
+
+
+
+/*********************** Footer ************************/
+footer {
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.774);
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+footer div.row {
+    margin-bottom: 25px;
+}
+#hours, #address {
+    line-height: 1.5
+}
+#hours > span, #address > span {
+    font-size: 1em;
+}
+#testimonials {
+    font-style: italic;
+}
+#copyright {
+    font-size:1vw;
+}
+
+
+
+
+
+
+
+/************************************ Extra Small *************************************/
+@media (max-width: 575px) {
+    #brandsection-container {
+        padding-top:8px;
+    }
+    #logo-xs {
+        width: 30px;
+        height: 30px;}
+    .navbar-brand {
+        margin: 0;
+    }
+    svg {
+        width:3vw;
+        height:3vw;
+    }
+    .nav-link {
+        font-size:3.1vw;
+    }
+    #BrandName {
+        font-size:5vw;
+    }
+    #phone {
+        font-size:3.5vw;
+        padding: 2px;
+    }
+    .navbar-toggler-icon {
+        width: 1.25em;
+        height: 1.25em;
+    }
+    .navbar-toggler {
+        font-size: 12pt;
+        line-height: .8;
+        padding: 3px;
+    }
+    #menu-tile, #about-tile, #map-tile {
+        height: 115px;
+        width: 100%;
+    }
+    #menu-tile-container{
+        padding-right:6px;
+    }
+    #about-tile-container{
+        padding-left: 6px;
+
+
+    }
+    footer {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+    }
+    footer div.row {
+        margin-bottom: 12px;
+    }
+    #hours, #address {
+        line-height: 1.2;
+    }
+    #hours > span, #address > span {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/************************************ Small ***************************************/
+@media (min-width: 576px) and (max-width: 767px) {
+    #logo{
+        width: 80px;
+        height: 80px;
+    }
+    #BrandName {
+        font-size:4.6vw;
+    }
+    #phone {
+        font-size:3.5vw;
+    }
+    #brandsection-container {
+        padding-top:25px;
+    }
+    #menu-tile-container{
+        padding-right:6px;
+    }
+    #about-tile-container{
+        padding-left: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*********************************** Medium **************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+    #logo{
+        width: 80px;
+        height: 80px;
+    }
+    svg {
+        width:3vw;
+        height:3vw;
+    }
+    .navbar-brand {
+        font-size:3.5vw;
+    }
+    .nav-link {
+        font-size:12pt;
+    }
+    #brandsection-container {
+        padding-top:30px;
+    }
+    
+    #jumbotron {
+        background: url('../images/restaurant-1000.jpeg') no-repeat;
+        height: 558px;
+    }
+    #menu-tile-container{
+        padding-right:6px;
+    }
+    #about-tile-container{
+        padding: 0 6px;
+    }
+    #map-tile-container{
+        padding-left:6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*********************************** Large **************************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #jumbotron {
+        background: url('../images/restaurant-1600.jpeg') no-repeat;
+        height: 675px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*********************************** Extra-Large **************************************/
+@media (min-width: 1200px) {
+    #jumbotron {
+    background: url('../images/restaurant-1600.jpeg') no-repeat;
+    height: 675px; 
+    padding: 20px;
+    }
+}   
