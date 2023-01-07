@@ -33,8 +33,6 @@ body{
     margin:0;
     padding:0;
     line-height: .75;
-    width:100px;
-    height:100px;
 }
 .navbar-brand a, .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none;
@@ -57,6 +55,7 @@ body{
     max-width: 100% !important;
     text-align: center;
     margin-top:6px;
+    margin-bottom: 6px;
 }
 
 /*** Button Styling ***/ 
@@ -70,6 +69,7 @@ body{
 }
 svg {
     fill: white;
+    margin-bottom:5px;
 }
 
 
@@ -88,6 +88,7 @@ svg {
     position: relative;
     border: 3px solid gold;
     overflow: hidden;
+    border-radius: 3%;
 }
 #menu-tile:hover, #about-tile:hover, #map-tile:hover {
     box-shadow: 0 1px 5px 1px #cccccc;
@@ -107,12 +108,65 @@ svg {
     right:0;
     width:100%;
     text-align:center;
-    font-size:1.2em;
+    font-size:16pt;
     text-transform: uppercase;
     background-color: #000;
     color: #fff;    
     opacity: .7;
 }
+
+/* Menu Categories Page*/
+#middle-menu-section {
+}
+#v-pills-tab {
+    margin: 0 !important;
+}
+.menu-section {
+    background-color:white;
+    padding-bottom: 270px;
+    border-left: solid gold 3px;
+}
+.category-heading {
+    font-family: cursive;
+    line-height: .7;
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.category-title {
+    font-size: 24pt;
+    margin:0;
+}
+.item-info {
+    line-height:.98;
+}
+.item-name {
+    font-weight: bold;
+    font-size: 14pt;
+}
+.item-price {
+    font-size:14pt;
+}
+.item-description {
+    font-size:12pt;
+    padding-left:5px;
+}
+.item-info-row { display: flex; }
+
+.item-dot-space {
+  flex-grow: 1;
+  border-bottom: 2px dotted black;
+  margin: 0 4px 4px;
+  font-size:10pt;
+}
+.item-price {
+    color:black;
+    font-weight: bold;
+}
+
+
+
 
 
 
@@ -128,7 +182,7 @@ footer div.row {
     margin-bottom: 25px;
 }
 #hours, #address {
-    line-height: 1.5
+    line-height: 1.5;
 }
 #hours > span, #address > span {
     font-size: 1em;
@@ -148,6 +202,8 @@ footer div.row {
 
 /************************************ Extra Small *************************************/
 @media (max-width: 575px) {
+
+    /* Header */
     #brandsection-container {
         padding-top:8px;
     }
@@ -179,6 +235,8 @@ footer div.row {
         font-size: 12pt;
         line-height: .8;
         padding: 3px;
+
+    /* Home Middle Section */
     }
     #menu-tile, #about-tile, #map-tile {
         height: 115px;
@@ -187,25 +245,60 @@ footer div.row {
     #menu-tile-container{
         padding-right:6px;
     }
+    #menu-tile {
+        background: url('../images/carne-asada-xs.jpeg') no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    #about-tile {
+        background: url('../images/mountains-xs.jpeg') no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
     #about-tile-container{
         padding-left: 6px;
-
-
     }
+    #menu-tile span, #about-tile span, #map-tile span {
+        font-size:10pt;
+    }
+
+    /* Footer*/
     footer {
         padding-top: 12px;
         padding-bottom: 12px;
         text-align: center;
+        font-size: 8pt;
     }
     footer div.row {
         margin-bottom: 12px;
     }
     #hours, #address {
-        line-height: 1.2;
+        line-height: 1.4;
     }
     #hours > span, #address > span {
         font-size: 1.2em;
     }
+
+    /* Menu Middle Section */
+    .category-title {
+        font-size: 18pt;
+        margin:0;
+    }
+    .item-name {
+        font-weight: bold;
+        font-size: 10pt;
+    }
+    .item-price {
+        font-size:10pt;
+    }
+    .item-description {
+        font-size:8pt;
+        padding-left:5px;
+    }
+    .item-dot-space {
+        font-size: 7pt;
+    }
+
 }
 
 
@@ -294,27 +387,9 @@ footer div.row {
 
 
 /*********************************** Large **************************************/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
     #jumbotron {
         background: url('../images/restaurant-1600.jpeg') no-repeat;
         height: 675px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-/*********************************** Extra-Large **************************************/
-@media (min-width: 1200px) {
-    #jumbotron {
-    background: url('../images/restaurant-1600.jpeg') no-repeat;
-    height: 675px; 
-    padding: 20px;
-    }
-}   
